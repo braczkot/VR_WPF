@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,6 +28,20 @@ namespace Adatkarbantartas
 
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
         {
+            if(txtEmail.Text == "admin@admin.com" && txtPassword.Password == "password")
+            {
+                MainWindow objWindow = new MainWindow();
+                objWindow.Show();
+                this.Close();
+            }
+            else if(txtEmail.Text == "" || txtPassword.Password == "" || (txtEmail.Text == "" && txtPassword.Password == "")) 
+            {
+                MessageBox.Show("Missing login credentials!");
+            }
+            else
+            {
+                MessageBox.Show("Wrong E-mail, and/or password!");
+            }
             
         }
     }

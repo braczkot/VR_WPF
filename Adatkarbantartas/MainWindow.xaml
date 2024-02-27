@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Adatkarbantartas"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="Data Management" Height="450" Width="800" Background="DarkCyan">
+    <Border Background="DarkSlateGray" CornerRadius="20" Margin="20">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="9*"/>
+                <ColumnDefinition Width="91*"/>
+            </Grid.ColumnDefinitions>
+
+        </Grid>
+    </Border>
 </Window>

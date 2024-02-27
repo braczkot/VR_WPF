@@ -10,8 +10,8 @@
     <StackPanel Margin="20">
         <Label Content="Login" Foreground="White" FontSize="25" HorizontalAlignment="Center"/>
             <Separator></Separator>
-            <Label Content="Username" Foreground="White"/>
-            <TextBox Name="txtUsername" Background="DarkGray" Foreground="White" FontSize="18"/>
+            <Label Content="E-mail" Foreground="White"/>
+            <TextBox Name="txtEmail" Background="DarkGray" Foreground="White" FontSize="18"/>
             <Label Content="Password" Foreground="White"/>
             <PasswordBox Name="txtPassword" Background="DarkGray" Foreground="White" FontSize="18"/>
             <Button Name="btnSubmit" Content="Log In" Click="btnSubmit_Click" Background="DarkGray" Foreground="White" FontSize="18" Margin="60 10"/>
